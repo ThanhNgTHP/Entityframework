@@ -16,12 +16,11 @@ namespace server.Controllers
         [HttpGet]
         public IActionResult Index()
         {
-            string message = "";
-            _context.comics.ToList().ForEach(lop =>
-            {
-                message = lop.name;
-            });
-            //Lop
+            string message = "123";
+            //_context.comics.ToList().ForEach(lop =>
+            //{
+            //    message = lop.name;
+            //});
             return Ok(new
             {
                 message = message
